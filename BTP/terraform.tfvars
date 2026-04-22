@@ -32,5 +32,10 @@ subaccounts = {
     subaccount_stage  = "DEV"
     subaccount_region = "us10"
   }
+  qa_ops = {
+    project_name      = "Ops"
+    subaccount_stage  = "QA"
+    subaccount_region = "us10"
+  }
 
 }

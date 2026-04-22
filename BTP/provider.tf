@@ -10,6 +10,9 @@ terraform {
 # Configure the BTP Provider
 provider "btp" {
   globalaccount = var.btp_globalaccount
-  username      = var.btp_username
-  password      = var.btp_password
+  idp           = var.btp_idp
+  assertion     = var.oidc_jwt_token
+  #token_url     = var.oidc_token_url
+  #client_id     = var.oidc_client_id
+  #client_secret = var.oidc_client_secret
 }

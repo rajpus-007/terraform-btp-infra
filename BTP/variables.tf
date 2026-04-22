@@ -1,15 +1,25 @@
-variable "btp_username" {
-  description = "Technical user for logging in to the BTP account"
+#variable "btp_username" {
+#  description = "Technical user for logging in to the BTP account"
+#  type        = string
+#  sensitive   = true
+#}
+
+#variable "btp_password" {
+#  description = "Technical user password for logging in to the BTP account"
+#  type        = string
+#  sensitive   = true
+#}
+
+variable "btp_idp" {
   type        = string
-  sensitive   = true
+  description = "Custom IdP name from BTP Cockpit Trust Configurations"
 }
 
-variable "btp_password" {
-  description = "Technical user password for logging in to the BTP account"
+variable "oidc_jwt_token" {
   type        = string
   sensitive   = true
+  description = "JWT assertion token from your OIDC provider"
 }
-
 variable "btp_globalaccount" {
   description = "BTP global account ID sub-domain"
   type        = string
